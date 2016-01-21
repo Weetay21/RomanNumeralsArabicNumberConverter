@@ -6,10 +6,19 @@
 #include "../PillarKata/Converter.h"
 
 
+Converter converter;
 
-TEST(test1, testi)
+TEST(TestArabic1ToRomanI, Convert1)
 {
-	Converter converter;
+	
 
 	EXPECT_EQ("I", converter.ConverterArabicToRoman(1));
+	
+}
+
+TEST(TestArabic3ToRomanIII, Convert3)
+{
+	
+
+	EXPECT_EQ("III", converter.ConverterArabicToRoman(3));
 }

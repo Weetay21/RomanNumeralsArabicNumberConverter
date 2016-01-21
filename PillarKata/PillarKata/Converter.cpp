@@ -9,7 +9,7 @@
 
 int main()
 {
-
+	Converter converter;
 
 	return 0;
 }
