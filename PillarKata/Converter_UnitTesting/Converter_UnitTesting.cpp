@@ -53,3 +53,7 @@ TEST(TestRomanToArabic, ConvertMLXVI)
 	EXPECT_EQ(1066, converter.ConverterRomanToArabic("MLXVI"));
 }
 
+TEST(TestRomanToArabic, ConvertMCMLXXXIX)
+{
+	EXPECT_EQ(1989, converter.ConverterRomanToArabic("MCMLXXXIV"));
+}
