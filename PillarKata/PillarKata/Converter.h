@@ -17,8 +17,10 @@ public:
 
 	//Data Members
 	string m_sRomanNumeral;
+	int m_sArabicNumber;
 	//Functions
 	string ConverterArabicToRoman(int _inputNumber);
+	int ConverterRomanToArabic(string _inputString);
 
 private:
 
@@ -31,6 +33,16 @@ Converter::Converter()
 Converter::~Converter()
 {
 
+}
+
+int Converter::ConverterRomanToArabic(string _inputString)
+{
+	if(_inputString[0] == (char)'I')
+	{
+		m_sArabicNumber += 1;
+	}
+
+	return m_sArabicNumber;
 }
 
 string Converter::ConverterArabicToRoman(int _inputNumber)

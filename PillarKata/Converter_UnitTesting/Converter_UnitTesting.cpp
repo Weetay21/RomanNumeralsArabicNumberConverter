@@ -32,3 +32,8 @@ TEST(TestArabicToRoman, Convert1989)
 {
 	EXPECT_EQ("MCMLXXXIX", converter.ConverterArabicToRoman(1989));
 }
+
+TEST(TestRomanToArabic, ConvertI)
+{
+	EXPECT_EQ(1, converter.ConverterRomanToArabic("I"));
+}
