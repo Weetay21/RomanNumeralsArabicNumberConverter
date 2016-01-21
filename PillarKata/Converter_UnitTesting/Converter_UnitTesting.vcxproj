@@ -41,7 +41,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>C:\Users\nwhite\Desktop\PillarKata\PillarKata\PillarKata;C:\gtest-1.7.0\include;C:\gtest-1.7.0;$(IncludePath)</IncludePath>
+    <IncludePath>C:\Users\nwhite\Desktop\PillarKata\PillarKata\PillarKata;C:\Users\nwhite\Desktop\PillarKata\PillarKata\gtest-1.7.0\include;C:\Users\nwhite\Desktop\PillarKata\PillarKata\gtest-1.7.0;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>

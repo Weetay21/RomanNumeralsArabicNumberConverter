@@ -39,12 +39,10 @@ int Converter::ConverterRomanToArabic(string _inputString)
 {
 	m_nArabicNumber = 0;
 
-	for (int i = 0; i < _inputString.size(); ++i)
+	for (unsigned int i = 0; i < _inputString.size(); ++i)
 	{
 		if (_inputString[i] != _inputString.back())
 		{
-
-
 			if (_inputString[i] == (char)'I')
 			{
 				if (_inputString[i + 1] != 'I')
@@ -96,7 +94,7 @@ int Converter::ConverterRomanToArabic(string _inputString)
 				m_nArabicNumber += 1000;
 			}
 		}
-		else
+		else // If the letter is the last in the string just add
 		{
 			if (_inputString[i] == (char)'I')
 			{
@@ -127,7 +125,6 @@ int Converter::ConverterRomanToArabic(string _inputString)
 				m_nArabicNumber += 1000;
 			}
 		}
-
 	}
 	return m_nArabicNumber;
 }
