@@ -7,18 +7,23 @@
 
 
 Converter converter;
-
-TEST(TestArabic1ToRomanI, Convert1)
+// TEST(Group of test , Specific Test name)
+TEST(TestArabicToRoman, Convert1)
 {
 	EXPECT_EQ("I", converter.ConverterArabicToRoman(1));	
 }
 
-TEST(TestArabic3ToRomanIII, Convert3)
+TEST(TestArabicToRoman, Convert3)
 {
 	EXPECT_EQ("III", converter.ConverterArabicToRoman(3));
 }
 
-TEST(TestArabic3ToRomanIX, Convert9)
+TEST(TestArabicToRoman, Convert9)
 {
 	EXPECT_EQ("IX", converter.ConverterArabicToRoman(9));
+}
+
+TEST(TestArabicToRoman, Convert1066)
+{
+	EXPECT_EQ("MLXVI", converter.ConverterArabicToRoman(1066));
 }
