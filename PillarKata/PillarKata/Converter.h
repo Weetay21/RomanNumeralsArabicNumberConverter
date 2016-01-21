@@ -57,21 +57,41 @@ string Converter::ConverterArabicToRoman(int _inputNumber)
 		m_sRomanNumeral.append("M");
 		_inputNumber -= m;
 	}
+	while (_inputNumber >= cm)
+	{
+		m_sRomanNumeral.append("CM");
+		_inputNumber -= cm;
+	}
 	while (_inputNumber >= d)
 	{
 		m_sRomanNumeral.append("D");
 		_inputNumber -= d;
+	}
+	while (_inputNumber >= cd)
+	{
+		m_sRomanNumeral.append("CD");
+		_inputNumber -= cd;
 	}
 	while (_inputNumber >= c)
 	{
 		m_sRomanNumeral.append("C");
 		_inputNumber -= c;
 	}
+	while (_inputNumber >= xc)
+	{
+		m_sRomanNumeral.append("XC");
+		_inputNumber -= xc;
+	}
 	while (_inputNumber >= l)
 	{
 		m_sRomanNumeral.append("L");
 		_inputNumber -= l;
 	}
+	while (_inputNumber >= xl)
+	{
+		m_sRomanNumeral.append("XL");
+		_inputNumber -= xl;
+	} 
 	while (_inputNumber >= x)
 	{
 		m_sRomanNumeral.append("X");
@@ -90,7 +110,7 @@ string Converter::ConverterArabicToRoman(int _inputNumber)
 	while (_inputNumber >= iv)
 	{
 		m_sRomanNumeral.append("IV");
-		_inputNumber -= m;
+		_inputNumber -= iv;
 	}
 	while (_inputNumber >= i)
 	{
