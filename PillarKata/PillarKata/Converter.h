@@ -41,10 +41,50 @@ int Converter::ConverterRomanToArabic(string _inputString)
 
 	for(int i = 0; i < _inputString.size(); ++i)
 	{
-		if(_inputString[i] == (char)'I')
+		if(_inputString[i] != _inputString.back())
 		{
-			m_nArabicNumber += 1;
-		}		
+			if (_inputString[i] == (char)'I')
+			{
+				if (_inputString[i + 1] != 'I')
+				{
+					m_nArabicNumber -= 1;
+				}
+				else
+				{
+					m_nArabicNumber += 1;
+				}
+			}
+			if (_inputString[i] == (char) 'V')
+			{
+				m_nArabicNumber += 5;
+			}
+			if (_inputString[i] == (char)'X')
+			{
+				if (_inputString[i + 1] == 'I' || _inputString[i + 1] == 'V' || _inputString[i + 1] == 'X')
+				{
+					m_nArabicNumber += 10;
+				}
+				else
+				{
+					m_nArabicNumber -= 10;
+				}
+			}	
+		}
+		else
+		{
+			if (_inputString[i] == (char)'I')
+			{
+				m_nArabicNumber += 1;
+			}
+			if (_inputString[i] == (char)'V')
+			{
+				m_nArabicNumber += 5;
+			}
+			if (_inputString[i] == (char)'X')
+			{
+				m_nArabicNumber += 10;
+			}
+		}
 	}
 	return m_nArabicNumber;
 }
