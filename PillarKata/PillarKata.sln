@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Converter", "PillarKata\PillarKata.vcxproj", "{7192264E-B06E-405D-914F-4D1800518FB2}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GoogleTest", "GoogleTest\GoogleTest.vcxproj", "{140DC387-799F-474F-BD78-976BBE73E0EC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Converter_UnitTesting", "Converter_UnitTesting\Converter_UnitTesting.vcxproj", "{F1EA249E-DAF3-4B4A-B0AF-BC1EDCA97BE4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7192264E-B06E-405D-914F-4D1800518FB2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7192264E-B06E-405D-914F-4D1800518FB2}.Debug|Win32.Build.0 = Debug|Win32
+		{7192264E-B06E-405D-914F-4D1800518FB2}.Release|Win32.ActiveCfg = Release|Win32
+		{7192264E-B06E-405D-914F-4D1800518FB2}.Release|Win32.Build.0 = Release|Win32
+		{140DC387-799F-474F-BD78-976BBE73E0EC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{140DC387-799F-474F-BD78-976BBE73E0EC}.Debug|Win32.Build.0 = Debug|Win32
+		{140DC387-799F-474F-BD78-976BBE73E0EC}.Release|Win32.ActiveCfg = Release|Win32
+		{140DC387-799F-474F-BD78-976BBE73E0EC}.Release|Win32.Build.0 = Release|Win32
+		{F1EA249E-DAF3-4B4A-B0AF-BC1EDCA97BE4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F1EA249E-DAF3-4B4A-B0AF-BC1EDCA97BE4}.Debug|Win32.Build.0 = Debug|Win32
+		{F1EA249E-DAF3-4B4A-B0AF-BC1EDCA97BE4}.Release|Win32.ActiveCfg = Release|Win32
+		{F1EA249E-DAF3-4B4A-B0AF-BC1EDCA97BE4}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
