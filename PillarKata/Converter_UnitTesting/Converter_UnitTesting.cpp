@@ -10,15 +10,15 @@ Converter converter;
 
 TEST(TestArabic1ToRomanI, Convert1)
 {
-	
-
-	EXPECT_EQ("I", converter.ConverterArabicToRoman(1));
-	
+	EXPECT_EQ("I", converter.ConverterArabicToRoman(1));	
 }
 
 TEST(TestArabic3ToRomanIII, Convert3)
 {
-	
-
 	EXPECT_EQ("III", converter.ConverterArabicToRoman(3));
+}
+
+TEST(TestArabic3ToRomanIX, Convert9)
+{
+	EXPECT_EQ("IX", converter.ConverterArabicToRoman(9));
 }
