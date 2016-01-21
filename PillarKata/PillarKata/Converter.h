@@ -58,7 +58,7 @@ int Converter::ConverterRomanToArabic(string _inputString)
 			{
 				m_nArabicNumber += 5;
 			}
-			if (_inputString[i] == (char)'X')
+			if (_inputString[i] == (char) 'X')
 			{
 				if (_inputString[i + 1] == 'I' || _inputString[i + 1] == 'V' || _inputString[i + 1] == 'X')
 				{
@@ -68,7 +68,31 @@ int Converter::ConverterRomanToArabic(string _inputString)
 				{
 					m_nArabicNumber -= 10;
 				}
-			}	
+			}
+			if (_inputString[i] == (char)'L')
+			{
+				m_nArabicNumber += 50;
+
+			}
+			if (_inputString[i] == (char)'C')
+			{
+				if (_inputString[i + 1] == 'D' || _inputString[i + 1] == 'M')
+				{
+					m_nArabicNumber -= 100;
+				}
+				else
+				{
+					m_nArabicNumber += 100;
+				}
+			}
+			if (_inputString[i] == (char)'D')
+			{
+				m_nArabicNumber += 500;
+			}
+			if (_inputString[i] == (char)'M')
+			{
+				m_nArabicNumber += 1000;
+			}
 		}
 		else
 		{
