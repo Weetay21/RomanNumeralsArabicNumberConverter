@@ -37,3 +37,9 @@ TEST(TestRomanToArabic, ConvertI)
 {
 	EXPECT_EQ(1, converter.ConverterRomanToArabic("I"));
 }
+
+TEST(TestRomanToArabic, ConvertIII)
+{
+	EXPECT_EQ(3, converter.ConverterRomanToArabic("III"));
+}
+
